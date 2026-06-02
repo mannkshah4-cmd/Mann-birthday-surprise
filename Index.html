@@ -1,0 +1,1375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Best Friend Return Gift ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:black;
+  overflow:hidden;
+  color:white;
+}
+
+/* ========================= */
+/* STARS */
+/* ========================= */
+
+.stars{
+
+  position:fixed;
+  inset:0;
+
+  background-image:
+  radial-gradient(white 1px, transparent 1px);
+
+  background-size:40px 40px;
+
+  opacity:0.15;
+
+  animation:moveStars 20s linear infinite;
+}
+
+@keyframes moveStars{
+
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(40px);
+  }
+
+}
+
+/* ========================= */
+/* BARS */
+/* ========================= */
+
+.top-bar,
+.bottom-bar{
+
+  position:fixed;
+
+  width:100%;
+  height:45px;
+
+  background:black;
+
+  z-index:99999;
+}
+
+.top-bar{
+  top:0;
+}
+
+.bottom-bar{
+  bottom:0;
+}
+
+/* ========================= */
+/* MUSIC */
+/* ========================= */
+
+#musicBtn{
+
+  position:fixed;
+
+  top:60px;
+  right:20px;
+
+  width:55px;
+  height:55px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#E50914;
+
+  color:white;
+
+  font-size:1.2rem;
+
+  z-index:999999;
+
+  cursor:pointer;
+
+  box-shadow:
+  0 0 20px rgba(229,9,20,0.8);
+}
+
+/* ========================= */
+/* NAME SCREEN */
+/* ========================= */
+
+.name-screen{
+
+  position:fixed;
+  inset:0;
+
+  background:black;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  z-index:9999;
+
+  padding:20px;
+}
+
+.netflix-mini{
+
+  font-size:4rem;
+
+  color:#E50914;
+
+  font-weight:700;
+
+  letter-spacing:8px;
+
+  margin-bottom:30px;
+
+  text-shadow:
+  0 0 20px rgba(229,9,20,0.8),
+  0 0 60px rgba(229,9,20,0.5);
+}
+
+.name-screen h1{
+
+  font-size:2.5rem;
+
+  text-align:center;
+
+  line-height:1.5;
+
+  margin-bottom:20px;
+}
+
+.name-screen p{
+
+  color:#bbb;
+
+  margin-bottom:30px;
+}
+
+input{
+
+  width:320px;
+
+  padding:16px;
+
+  border:none;
+
+  border-radius:50px;
+
+  outline:none;
+
+  text-align:center;
+
+  font-size:1rem;
+
+  margin-bottom:20px;
+}
+
+button{
+
+  padding:15px 35px;
+
+  border:none;
+
+  border-radius:50px;
+
+  background:#E50914;
+
+  color:white;
+
+  font-size:1rem;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+
+  transform:scale(1.08);
+}
+
+/* ========================= */
+/* COUNTDOWN */
+/* ========================= */
+
+.countdown{
+
+  position:fixed;
+  inset:0;
+
+  background:black;
+
+  display:none;
+  justify-content:center;
+  align-items:center;
+
+  font-size:10rem;
+
+  color:#E50914;
+
+  z-index:9998;
+}
+
+/* ========================= */
+/* CONGRATS */
+/* ========================= */
+
+.congrats{
+
+  position:fixed;
+  inset:0;
+
+  background:black;
+
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  overflow:hidden;
+
+  z-index:9997;
+
+  text-align:center;
+}
+
+.congrats h1{
+
+  font-size:3rem;
+
+  color:#E50914;
+
+  margin-bottom:15px;
+}
+
+.congrats p{
+
+  font-size:1.2rem;
+
+  margin-bottom:25px;
+}
+
+.photo{
+
+  width:190px;
+  height:270px;
+
+  object-fit:cover;
+
+  border-radius:20px;
+
+  border:5px solid #E50914;
+
+  box-shadow:
+  0 0 40px rgba(229,9,20,0.8);
+
+  animation:heartbeat 2s infinite;
+}
+
+/* ========================= */
+/* PETALS */
+/* ========================= */
+
+.petal{
+
+  position:absolute;
+
+  top:-20px;
+
+  font-size:25px;
+
+  animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+  to{
+
+    transform:
+    translateY(110vh)
+    rotate(360deg);
+
+  }
+
+}
+
+/* ========================= */
+/* NETFLIX INTRO */
+/* ========================= */
+
+.netflix-intro{
+
+  position:fixed;
+  inset:0;
+
+  background:black;
+
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  z-index:9996;
+}
+
+.netflix-logo{
+
+  font-size:6rem;
+
+  color:#E50914;
+
+  letter-spacing:10px;
+
+  animation:zoom 2s ease;
+}
+
+.netflix-text{
+
+  margin-top:30px;
+
+  font-size:1.5rem;
+
+  text-align:center;
+
+  line-height:2;
+
+  animation:fadeUp 2s ease;
+}
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+.main{
+
+  display:none;
+
+  width:100%;
+  height:100vh;
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,0.7),
+  rgba(0,0,0,0.9)
+  ),
+
+  url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1920&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+.container{
+
+  width:100%;
+  max-width:950px;
+
+  background:rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter:blur(18px);
+
+  border-radius:35px;
+
+  padding:25px;
+}
+
+.cinema{
+
+  position:relative;
+
+  width:100%;
+  height:550px;
+
+  overflow:hidden;
+
+  border-radius:25px;
+
+  background:black;
+}
+
+.scene{
+
+  position:absolute;
+  inset:0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  opacity:0;
+
+  transition:1.5s ease;
+}
+
+.scene.active{
+  opacity:1;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.movie-text{
+
+  width:100%;
+
+  padding:0 20px;
+
+  text-align:center;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+}
+
+.movie-text h1{
+
+  font-size:clamp(1.6rem,4vw,3rem);
+
+  line-height:1.6;
+
+  margin-bottom:20px;
+
+  display:inline-block;
+
+  overflow:hidden;
+
+  border-right:3px solid white;
+
+  padding-right:10px;
+
+  max-width:100%;
+
+  white-space:nowrap;
+
+  width:0;
+
+  animation:
+  typing 4s steps(50,end) forwards,
+  blink .8s infinite;
+}
+
+.movie-text p{
+
+  font-size:clamp(1rem,2vw,1.3rem);
+
+  line-height:1.9;
+
+  color:#ddd;
+
+  opacity:0;
+
+  animation:fadeUp 1.5s ease forwards;
+
+  animation-delay:3.5s;
+}
+
+@keyframes typing{
+
+  from{
+    width:0;
+  }
+
+  to{
+    width:calc(100% + 20px);
+  }
+
+}
+
+@keyframes blink{
+
+  50%{
+    border-color:transparent;
+  }
+
+}
+
+/* ========================= */
+/* MEMORY WALL */
+/* ========================= */
+
+.memory-wall{
+
+  position:relative;
+
+  width:100%;
+  height:100%;
+
+  overflow:hidden;
+}
+
+.memory{
+
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  width:260px;
+  height:380px;
+
+  object-fit:cover;
+
+  border:10px solid white;
+
+  border-bottom:45px solid white;
+
+  border-radius:12px;
+
+  box-shadow:
+  0 0 35px rgba(255,255,255,0.25);
+
+  opacity:0;
+
+  transform:
+  translate(-50%,-50%)
+  scale(0.3);
+}
+
+/* PHOTO 1 */
+
+.memory1{
+
+  animation:
+  memory1 10s forwards;
+}
+
+@keyframes memory1{
+
+  0%{
+
+    opacity:0;
+
+    transform:
+    translate(-50%,-50%)
+    scale(0.3);
+  }
+
+  15%{
+
+    opacity:1;
+
+    transform:
+    translate(-50%,-50%)
+    scale(1);
+  }
+
+  40%{
+
+    opacity:1;
+
+    transform:
+    translate(-50%,-50%)
+    scale(1);
+  }
+
+  100%{
+
+    opacity:1;
+
+    transform:
+    translate(calc(-50% - 260px),-50%)
+    rotate(-8deg)
+    scale(0.9);
+  }
+
+}
+
+/* PHOTO 2 */
+
+.memory2{
+
+  animation:
+  memory2 10s forwards;
+}
+
+@keyframes memory2{
+
+  0%,35%{
+
+    opacity:0;
+
+    transform:
+    translate(-50%,-50%)
+    scale(0.3);
+  }
+
+  50%{
+
+    opacity:1;
+
+    transform:
+    translate(-50%,-50%)
+    scale(1);
+  }
+
+  100%{
+
+    opacity:1;
+
+    transform:
+    translate(-50%,-50%)
+    scale(1);
+  }
+
+}
+
+/* PHOTO 3 */
+
+.memory3{
+
+  animation:
+  memory3 10s forwards;
+}
+
+@keyframes memory3{
+
+  0%,60%{
+
+    opacity:0;
+
+    transform:
+    translate(-50%,-50%)
+    scale(0.3);
+  }
+
+  75%{
+
+    opacity:1;
+
+    transform:
+    translate(-50%,-50%)
+    scale(1);
+  }
+
+  100%{
+
+    opacity:1;
+
+    transform:
+    translate(calc(-50% + 260px),-50%)
+    rotate(8deg)
+    scale(0.9);
+  }
+
+}
+
+/* ========================= */
+/* FIREWORKS */
+/* ========================= */
+
+.firework{
+
+  position:fixed;
+
+  bottom:-50px;
+
+  width:8px;
+  height:8px;
+
+  border-radius:50%;
+
+  z-index:2;
+
+  animation:
+  launch 1.2s linear forwards;
+}
+
+.blast{
+
+  position:fixed;
+
+  font-size:30px;
+
+  opacity:0;
+
+  z-index:2;
+
+  animation:
+  explode 1s ease forwards;
+}
+
+@keyframes launch{
+
+  from{
+
+    transform:
+    translateY(0);
+
+  }
+
+  to{
+
+    transform:
+    translateY(-85vh);
+
+  }
+
+}
+
+@keyframes explode{
+
+  0%{
+    transform:scale(0);
+    opacity:0;
+  }
+
+  40%{
+    transform:scale(2);
+    opacity:1;
+  }
+
+  100%{
+    transform:scale(3);
+    opacity:0;
+  }
+
+}
+
+/* ========================= */
+/* END */
+/* ========================= */
+
+.end-screen{
+
+  position:fixed;
+  inset:0;
+
+  background:black;
+
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  text-align:center;
+
+  padding:20px;
+}
+
+.end-screen h1{
+
+  font-size:2.4rem;
+
+  line-height:1.6;
+
+  margin-bottom:30px;
+}
+
+/* ========================= */
+/* EXTRA */
+/* ========================= */
+
+@keyframes zoom{
+
+  from{
+    transform:scale(0.5);
+    opacity:0;
+  }
+
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@keyframes heartbeat{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.05);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+  .movie-text h1{
+
+    font-size:1.5rem;
+
+    white-space:normal;
+
+    border-right:none;
+
+    animation:fadeUp 2s ease;
+  }
+
+  .movie-text p{
+    font-size:1rem;
+  }
+
+  .memory{
+
+    width:170px;
+    height:250px;
+  }
+
+  .end-screen h1{
+    font-size:1.5rem;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="top-bar"></div>
+<div class="bottom-bar"></div>
+
+<button id="musicBtn">🎵</button>
+
+<audio id="introSound" loop>
+  <source src="https://files.catbox.moe/5que3d.mp3" type="audio/mp3">
+</audio>
+
+<!-- NAME -->
+
+<div class="name-screen" id="nameScreen">
+
+  <div class="netflix-mini">
+    NETFLIX
+  </div>
+
+  <h1>
+    Only My Best Friend Can Unlock This 🎁
+  </h1>
+
+  <p>
+    Enter your beautiful name ✨
+  </p>
+
+  <input
+  type="text"
+  id="nameInput"
+  placeholder="Enter your name">
+
+  <button onclick="checkName()">
+    Continue
+  </button>
+
+</div>
+
+<!-- COUNTDOWN -->
+
+<div class="countdown" id="countdown">
+  3
+</div>
+
+<!-- CONGRATS -->
+
+<div class="congrats" id="congrats">
+
+  <h1>
+    Congratulations 🎉
+  </h1>
+
+  <p>
+    You guessed perfectly 💛
+  </p>
+
+  <img
+  src="https://i.postimg.cc/3xQSB6VF/Akansha.png"
+  class="photo">
+
+</div>
+
+<!-- INTRO -->
+
+<div class="netflix-intro" id="netflixIntro">
+
+  <div class="netflix-logo">
+    NETFLIX
+  </div>
+
+  <div class="netflix-text">
+
+    In a world where everything changed...
+    <br>
+    One friend made everything unforgettable ✨
+
+  </div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main" id="main">
+
+  <div class="container">
+
+    <div class="cinema">
+
+      <div class="scene active">
+
+        <div class="movie-text">
+
+          <h1>
+            Some people enter life temporarily...
+          </h1>
+
+          <p>
+            And some become family forever 💛
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="scene">
+
+        <div class="movie-text">
+
+          <h1>
+            Through every chaos...
+          </h1>
+
+          <p>
+            You remained my loudest happiness 😂
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="scene">
+
+        <div class="movie-text">
+
+          <h1>
+            You made my life moments into memories 💛
+          </h1>
+
+          <p>
+            And ordinary birthdays into unforgettable stories ✨
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="scene">
+
+        <div class="movie-text">
+
+          <h1>
+            Thank you for every effort you made 🎁
+          </h1>
+
+          <p>
+            This surprise is my tiny return gift 💛
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- PHOTOS -->
+
+      <div class="scene">
+
+        <div class="memory-wall">
+
+          <img
+          src="https://i.postimg.cc/pdPMryBf/Photo1.jpg"
+          class="memory memory1">
+
+          <img
+          src="https://i.postimg.cc/q7pHqgG6/Photo1-1.jpg"
+          class="memory memory2">
+
+          <img
+          src="https://i.postimg.cc/PqdnJNMm/Photo1-3.jpg"
+          class="memory memory3">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- END -->
+
+<div class="end-screen" id="endScreen">
+
+  <h1>
+    Thank You For Making My Birthday Unforgettable 🎂✨
+    <br><br>
+    You Are Truly One Of The Best Parts Of My Life 💛
+  </h1>
+
+  <button onclick="location.reload()">
+    Watch Again ❤️
+  </button>
+
+</div>
+
+<script>
+
+function checkName(){
+
+  let input =
+  document
+  .getElementById("nameInput")
+  .value
+  .trim()
+  .toLowerCase();
+
+  let realName = "akansha";
+
+  if(input == realName){
+
+    document
+    .getElementById("nameScreen")
+    .style.display = "none";
+
+    let music =
+    document.getElementById("introSound");
+
+    music.volume = 0.4;
+
+    music.play();
+
+    startCountdown();
+
+  }else{
+
+    alert("Wrong guess ❤️ Try again");
+
+  }
+
+}
+
+/* COUNTDOWN */
+
+function startCountdown(){
+
+  let countdown =
+  document.getElementById("countdown");
+
+  countdown.style.display = "flex";
+
+  let count = 3;
+
+  countdown.innerHTML = count;
+
+  let timer = setInterval(()=>{
+
+    count--;
+
+    if(count <= 0){
+
+      clearInterval(timer);
+
+      countdown.style.display = "none";
+
+      showCongrats();
+
+    }else{
+
+      countdown.innerHTML = count;
+
+    }
+
+  },1000);
+
+}
+
+/* CONGRATS */
+
+function showCongrats(){
+
+  document
+  .getElementById("congrats")
+  .style.display = "flex";
+
+  createPetals();
+
+  setTimeout(()=>{
+
+    document
+    .getElementById("congrats")
+    .style.display = "none";
+
+    showNetflixIntro();
+
+  },5000);
+
+}
+
+/* PETALS */
+
+function createPetals(){
+
+  let congrats =
+  document.getElementById("congrats");
+
+  for(let i=0;i<40;i++){
+
+    let petal =
+    document.createElement("div");
+
+    petal.innerHTML = "🌸";
+
+    petal.classList.add("petal");
+
+    petal.style.left =
+    Math.random()*100 + "vw";
+
+    petal.style.animationDuration =
+    (3 + Math.random()*5) + "s";
+
+    congrats.appendChild(petal);
+
+    setTimeout(()=>{
+      petal.remove();
+    },5000);
+
+  }
+
+}
+
+/* INTRO */
+
+function showNetflixIntro(){
+
+  document
+  .getElementById("netflixIntro")
+  .style.display = "flex";
+
+  setTimeout(()=>{
+
+    document
+    .getElementById("netflixIntro")
+    .style.display = "none";
+
+    document
+    .getElementById("main")
+    .style.display = "flex";
+
+    startSlideshow();
+
+  },5000);
+
+}
+
+/* SLIDESHOW */
+
+function startSlideshow(){
+
+  let scenes =
+  document.querySelectorAll(".scene");
+
+  let currentScene = 0;
+
+  let timings = [
+    5000,
+    5000,
+    6000,
+    5000,
+    11000
+  ];
+
+  scenes[currentScene]
+  .classList.add("active");
+
+  function nextScene(){
+
+    setTimeout(()=>{
+
+      scenes[currentScene]
+      .classList.remove("active");
+
+      currentScene++;
+
+      if(currentScene >= scenes.length){
+
+        createFireworks();
+
+        setTimeout(()=>{
+
+          document
+          .getElementById("main")
+          .style.display = "none";
+
+          document
+          .getElementById("endScreen")
+          .style.display = "flex";
+
+        },6000);
+
+        return;
+      }
+
+      scenes[currentScene]
+      .classList.add("active");
+
+      nextScene();
+
+    }, timings[currentScene]);
+
+  }
+
+  nextScene();
+
+}
+
+/* FIREWORKS */
+
+function createFireworks(){
+
+  for(let i=0;i<12;i++){
+
+    setTimeout(()=>{
+
+      let firework =
+      document.createElement("div");
+
+      firework.classList.add("firework");
+
+      firework.style.left =
+      Math.random()*80 + 10 + "vw";
+
+      firework.style.background =
+      ["#ff004c","#ffd000","#00ffea","#ffffff"]
+      [Math.floor(Math.random()*4)];
+
+      document.body.appendChild(firework);
+
+      setTimeout(()=>{
+
+        let x =
+        firework.getBoundingClientRect().left;
+
+        let y =
+        firework.getBoundingClientRect().top;
+
+        for(let j=0;j<15;j++){
+
+          let blast =
+          document.createElement("div");
+
+          blast.classList.add("blast");
+
+          blast.innerHTML =
+          ["✨","🎆","🎇","💥"]
+          [Math.floor(Math.random()*4)];
+
+          blast.style.left = x + "px";
+
+          blast.style.top = y + "px";
+
+          document.body.appendChild(blast);
+
+          setTimeout(()=>{
+            blast.remove();
+          },1000);
+
+        }
+
+        firework.remove();
+
+      },1200);
+
+    },i*300);
+
+  }
+
+}
+
+/* MUSIC */
+
+document
+.getElementById("musicBtn")
+.onclick = function(){
+
+  let music =
+  document.getElementById("introSound");
+
+  if(music.paused){
+
+    music.play();
+
+  }else{
+
+    music.pause();
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
+```
